@@ -1,1 +1,30 @@
-/*# sourceMappingURL=style.css.map hola */
+@charset "UTF-8";
+/*
+Link Google Fonts
+*/
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap");
+/*
+Colors
+*/
+/*
+Fuentes
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Orden fuentes
+*/
+/*
+Tamaño fuentes
+*/
+
+/*# sourceMappingURL=style.css.map */
