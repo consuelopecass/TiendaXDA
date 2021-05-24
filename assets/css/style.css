@@ -9,6 +9,9 @@ Colors
 /*
 Fuentes
 */
+/*
+Breakpoint tamaño pantalla
+*/
 * {
   margin: 0;
   padding: 0;
@@ -26,12 +29,90 @@ Orden fuentes
 /*
 Tamaño fuentes
 */
-.container-mostly-fluid .box {
-  border: 1px solid #0C0910;
+.container-grid {
+  display: grid;
+  height: 100vh;
+  /*versión mobile*/
+  grid-template-columns: 90vw 10vw;
+  grid-template-rows: 9vh 33vh 39vh 18vh;
+  /*versión tablet*/
+  /*versión desktop*/
 }
-@media (min-width: 340px) {
-  .container-mostly-fluid {
-    background-color: #D1D1D1;
+.container-grid .navbar {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  border: 1px solid red;
+}
+.container-grid .header {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  border: 1px solid blue;
+}
+.container-grid .article {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  border: 1px solid green;
+}
+.container-grid .footer {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  border: 1px solid orange;
+}
+.container-grid .subscribe {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  border: 1px solid lightcoral;
+}
+@media (min-width: 768px) {
+  .container-grid {
+    grid-template-columns: 93vw 6vw;
+    grid-template-rows: 10vh 32vh 37vh 20vh;
+  }
+  .container-grid .navbar {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .container-grid .header {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .container-grid .article {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .container-grid .footer {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .container-grid .subscribe {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+}
+@media (min-width: 1200px) {
+  .container-grid {
+    grid-template-columns: 39vw 4vw 57vw;
+    grid-template-rows: 11vh 62vh 26vh;
+  }
+  .container-grid .navbar {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .container-grid .header {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+  .container-grid .article {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .container-grid .footer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .container-grid .subscribe {
+    grid-column: 2/3;
+    grid-row: 3/4;
   }
 }
 
