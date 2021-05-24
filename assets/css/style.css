@@ -26,5 +26,13 @@ Orden fuentes
 /*
 Tamaño fuentes
 */
+.container-mostly-fluid .box {
+  border: 1px solid #0C0910;
+}
+@media (min-width: 340px) {
+  .container-mostly-fluid {
+    background-color: #D1D1D1;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

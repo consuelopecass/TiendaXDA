@@ -1,5 +1,6 @@
 //abstracts
 @import "abstracts/variables";
+@import "abstracts/mixins";
 //vendor
 //base
 @import "base/reset";
@@ -7,4 +8,5 @@
 //components
 //layout 
 //pages
+@import "pages/index";
 //themes

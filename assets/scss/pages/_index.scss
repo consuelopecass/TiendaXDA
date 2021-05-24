@@ -1,0 +1,8 @@
+.container-mostly-fluid {
+    .box {
+        border: 1px solid $smoky-black;
+    }
+    @include respond-to(340px) {
+        background-color: $ligth-gray;
+    }
+}
