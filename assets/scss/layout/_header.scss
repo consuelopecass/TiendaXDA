@@ -1,0 +1,25 @@
+.header {
+    &__contenedor {
+        width: 100%;
+        height: auto;
+    }
+    &__imagen {
+        max-width: 100%;
+        height: auto;
+        z-index: 10;
+    }
+    /* Tamaño tablet */
+    @include respond-to($bp-md-tablet) {
+        .header__imagen {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    /* Tamaño desktop */
+    @include respond-to($bp-xl-desktop) {
+        .header__imagen {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

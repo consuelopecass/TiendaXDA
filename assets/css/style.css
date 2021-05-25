@@ -18,6 +18,11 @@ Breakpoint tamaño pantalla
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -261,6 +266,37 @@ Tamaño fuentes
   .navbar .navbar__menuBurger {
     display: none;
   }
+}
+
+.header {
+  /* Tamaño tablet */
+  /* Tamaño desktop */
+}
+.header__contenedor {
+  width: 100%;
+  height: auto;
+}
+.header__imagen {
+  max-width: 100%;
+  height: auto;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+  .header .header__imagen {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .header .header__imagen {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.article {
+  z-index: 20;
+  background-color: #FFF;
 }
 
 /*# sourceMappingURL=style.css.map */
