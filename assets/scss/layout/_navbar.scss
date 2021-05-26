@@ -5,17 +5,17 @@
     height: 100%;
     &__logo {
         height: 100%;
-        width: 100px;
+        width: 80px;
         display: inline-block;
         background-color: $smoky-black;
     }
     &__logoNombre {
         margin: 0 auto;
         font-family: $secondary-font;
-        font-size: $xx-large-font;
+        font-size: $x-large-font;
         color: $white;
         text-align: center;
-        padding-top: 18px;
+        padding-top: 20px;
     }
     &__menu {
         display: none;
@@ -97,7 +97,7 @@
         .navbar__menu {
             display: inline-block;
             justify-content: flex-end;
-            padding: 30px 0;
+            padding: 20px 0;
         }
         .navbar__menuItem {
             color: $smoky-black;
@@ -105,7 +105,7 @@
             font-weight: $primary-font-bold;
             margin-top: 5px;
             display: inline-block;
-            padding: 0 50px;
+            padding: 0 40px;
         }
         .navbar__menuBurger {
             display: none;
@@ -121,7 +121,8 @@
             width: 120px;
         }
         .navbar__logoNombre {
-            padding-top: 28px;
+            padding-top: 30px;
+            font-size: $xx-large-font;
         }
         .navbar__menuBurger {
             display: inline-block;
