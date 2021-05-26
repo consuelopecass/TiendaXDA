@@ -1,3 +1,5 @@
+/* Tamaño mobile */
+
 .navbar {
     background-color: $white;
     display: flex;
@@ -5,7 +7,7 @@
     height: 100%;
     &__logo {
         height: 100%;
-        width: 80px;
+        width: 70px;
         display: inline-block;
         background-color: $smoky-black;
     }
@@ -19,9 +21,9 @@
     }
     &__menu {
         display: none;
-        margin: 0;
-        padding: 0;
-        display: none;
+    }
+    &__menuBurger {
+        padding: 20px 20px;
     }
     &__input {
         display: none;
@@ -31,9 +33,6 @@
         right: 16px;
         -webkit-transform: scale(1.5);
         transform: scale(1.5);
-    }
-    &__menuBurger {
-        padding: 20px 20px;
     }
     &__burger {
         display: block;
@@ -79,16 +78,20 @@
         transform: rotate(-45deg);
         background-color: #000000;
     }
+    /* 
+    Tamaño tamaño tablet 
+    */
     @include respond-to($bp-md-tablet) {
         .navbar {
             height: 100%;
-            width: 120px;
+            width: 70px;
         }
         .navbar__logo {
             display: inline-block;
             width: 120px;
         }
         .navbar__logoNombre {
+            font-size: $xx-large-font;
             padding-top: 23px;
         }
         .navbar__menuBurger {
@@ -96,21 +99,27 @@
         }
         .navbar__menu {
             display: inline-block;
-            justify-content: flex-end;
-            padding: 20px 0;
+            height: 200px;
+        }
+        .navbar__menu:last-child {
+            margin-right: 15px;
         }
         .navbar__menuItem {
             color: $smoky-black;
             font-family: $primary-font;
             font-weight: $primary-font-bold;
-            margin-top: 5px;
+            font-family: $large-font;
+            margin-top: 25px;
             display: inline-block;
-            padding: 0 40px;
+            padding: 0 27px;
         }
         .navbar__menuBurger {
             display: none;
         }
     }
+    /* 
+    Tamaño desktop
+    */
     @include respond-to($bp-xl-desktop) {
         .navbar {
             height: 100%;
@@ -128,17 +137,14 @@
             display: inline-block;
         }
         .navbar__menu {
-            display: inline-block;
-            justify-content: flex-end;
-            padding: 20px 0;
+            padding: 12px 0;
+        }
+        .navbar__menu:last-child {
+            margin-right: 40px;
         }
         .navbar__menuItem {
-            color: $smoky-black;
-            font-family: $primary-font;
-            font-weight: $primary-font-bold;
-            margin-top: 5px;
-            display: inline-block;
-            padding: 10px 60px;
+            padding: 0 40px;
+            font-size: $large-font;
         }
         .navbar__menuBurger {
             display: none;

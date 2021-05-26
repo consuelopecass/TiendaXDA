@@ -3,7 +3,7 @@
     height: 100vh;
     /*versión mobile*/
     grid-template-columns: 90vw 10vw;
-    grid-template-rows: 9.9vh 33vh 39vh 18vh;
+    grid-template-rows: 9vh 33vh 40vh 18vh;
     .navbar {
         grid-column: 1/3;
         grid-row: 1/2;
@@ -31,8 +31,8 @@
     }
     /*versión tablet*/
     @include respond-to($bp-md-tablet) {
-        grid-template-columns: 93vw 6vw;
-        grid-template-rows: 10vh 32vh 37vh 20vh;
+        grid-template-columns: 94vw 6vw;
+        grid-template-rows: 8vh 33vh 38vh 21vh;
         .navbar {
             grid-column: 1/3;
             grid-row: 1/2;
@@ -57,7 +57,7 @@
     /*versión desktop*/
     @include respond-to($bp-xl-desktop) {
         grid-template-columns: 39vw 4vw 57vw;
-        grid-template-rows: 11.5vh 62vh 26vh;
+        grid-template-rows: 10vh 62vh 28vh;
         .navbar {
             grid-column: 1/4;
             grid-row: 1/2;

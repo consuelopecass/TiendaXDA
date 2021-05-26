@@ -1,4 +1,18 @@
-.footer {
-    background-color: $smoky-black;
-    color: $white;
-}
+    .footer {
+        background-color: $smoky-black;
+        color: $white;
+        &__title {
+            width: 80%;
+            margin: 0 auto;
+            font-family: $secondary-font;
+            font-size: $x-large-font;
+            padding: 12px 0 5px 0;
+        }
+        /* Tamaño tablet */
+        @include respond-to($bp-md-tablet) {
+            &__title {
+                font-size: $xx-large-font;
+                padding: 30px 20px 5px 0;
+            }
+        }
+    }

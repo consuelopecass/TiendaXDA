@@ -2,7 +2,7 @@
     z-index: 20;
     background-color: $white;
     &__container {
-        padding: 50px;
+        padding: 20px 30px;
     }
     &__title {
         font-family: $secondary-font;
@@ -11,22 +11,44 @@
         line-height: 1.5;
     }
     &__paragraph {
+        line-height: 1.5;
         font-family: $primary-font;
         color: $quick-silver;
-        font-size: $large-font;
+        font-size: $medium-font;
     }
-    &__button {
-        text-decoration: none;
-        border: none;
-        margin: 0 5px;
-        padding: 11px 20px;
-        font-family: $primary-font;
-        font-weight: $primary-font-bold;
-        font-size: $x-large-font;
-        color: $smoky-black;
-        background-color: $white;
-        user-select: none;
-        -webkit-appearance: button;
-        border: 2px solid $smoky-black;
+    &__paragraphNone {
+        display: none;
+    }
+    /* Tamaño tablet */
+    @include respond-to($bp-md-tablet) {
+        &__container {
+            padding: 20px 70px;
+        }
+        &__title {
+            font-size: $xxx-large-font;
+            text-transform: uppercase;
+            line-height: 1.3;
+        }
+        &__titleCut {
+            display: block;
+        }
+        &__paragraph {
+            margin-top: 10px;
+            width: 80%
+        }
+        &__paragraphNone {
+            display: inline;
+        }
+    }
+    /* Tamaño desktop */
+    @include respond-to($bp-xl-desktop) {
+        &__container {
+            padding: 70px;
+        }
+        &__paragraph {
+            line-height: 2;
+            margin: 20px 0;
+            width: 60%
+        }
     }
 }

@@ -1,0 +1,30 @@
+/* Tamaño mobile */
+
+.subscribe {
+    background-color: $white;
+    color: $smoky-black;
+    &__paragraph {
+        writing-mode: vertical-rl;
+        font-family: $secondary-font;
+        font-weight: $secondary-font-bold;
+        font-size: $medium-font;
+        padding: 6px;
+        margin-top: 20px;
+    }
+    /* Tamaño tablet */
+    @include respond-to($bp-md-tablet) {
+        &__paragraph {
+            margin-top: 60px;
+            padding: 10px;
+            font-size: $large-font;
+        }
+    }
+    /* Tamaño desktop */
+    @include respond-to($bp-xl-desktop) {
+        &__paragraph {
+            margin-top: 80px;
+            padding: 18px;
+            font-size: $x-large-font;
+        }
+    }
+}

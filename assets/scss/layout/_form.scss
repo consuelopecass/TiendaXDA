@@ -1,0 +1,35 @@
+.form {
+    background-color: $smoky-black;
+    color: $white;
+    width: 80%;
+    margin: 0 auto;
+    &__legend {
+        font-family: $secondary-font;
+        font-size: $small-font;
+        font-weight: lighter;
+        padding-bottom: 8px;
+    }
+    &__input {
+        width: 100%;
+        height: 33px;
+        font-family: $primary-font;
+        padding-left: 10px;
+    }
+    /* Tamaño tablet */
+    @include respond-to($bp-md-tablet) {
+        &__legend {
+            padding-top: 8px;
+        }
+    }
+    /* Tamaño desktop */
+    @include respond-to($bp-xl-desktop) {
+        &__legend {
+            padding-top: 15px;
+            font-size: $medium-font;
+        }
+        &__input {
+            width: 60%;
+            height: 35px;
+        }
+    }
+}
