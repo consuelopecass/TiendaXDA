@@ -1,0 +1,6 @@
+----- Repositorio GitHub -----
+
+https://github.com/consuelopecass/TiendaXDA
+
+----- GitHub pages -----
+https://consuelopecass.github.io/TiendaXDA/
