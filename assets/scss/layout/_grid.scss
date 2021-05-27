@@ -2,32 +2,32 @@
     display: grid;
     height: 100vh;
     /*versión mobile*/
-    grid-template-columns: 90vw 10vw;
-    grid-template-rows: 9vh 33vh 40vh 18vh;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 9% 33% 40% 18%;
     .navbar {
         grid-column: 1/3;
         grid-row: 1/2;
-        border: 1px solid red;
+        // border: 1px solid red;
     }
     .header {
         grid-column: 1/3;
         grid-row: 2/3;
-        border: 1px solid blue;
+        // border: 1px solid blue;
     }
     .article {
         grid-column: 1/3;
         grid-row: 3/4;
-        border: 1px solid green;
+        // border: 1px solid green;
     }
     .footer {
         grid-column: 1/2;
         grid-row: 4/5;
-        border: 1px solid orange;
+        // border: 1px solid orange;
     }
     .subscribe {
         grid-column: 2/3;
         grid-row: 4/5;
-        border: 1px solid lightcoral;
+        // border: 1px solid lightcoral;
     }
     /*versión tablet*/
     @include respond-to($bp-md-tablet) {
