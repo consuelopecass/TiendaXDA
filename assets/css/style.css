@@ -300,7 +300,7 @@ Tamaño fuentes
   /* Tamaño desktop */
 }
 .header__imagen {
-  background: url(/assets/img/imagen1.png);
+  background: url(../img/imagen1.png);
   height: 40vh;
   width: 100%;
   margin: 0 auto;
